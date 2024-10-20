@@ -1,0 +1,115 @@
+{
+    "users": [
+       {
+          "identity":0,
+          "name": "Sushmita Dutta",
+          "texts": [
+             {
+                "id": 1,
+                "message": "GMM"
+             },
+             {
+                "id": 2,
+                "message": "Ki Korchis"
+             },
+             {
+                "id": 3,
+                "message": "Kotha Bol naaaa"
+             },
+             {
+               "id": 4,
+               "message": "eeeeeeeeeeeeeeee"
+            },
+            {
+               "id": 5,
+               "message": "om nom nom"
+            },
+            {
+               "id": 6,
+               "message": "bloob bloob"
+            }
+          ]
+       },
+       {
+        "identity":1,
+        "name": "Coco",
+        "texts": [
+           {
+              "id": 1,
+              "message": "Coco"
+           },
+           {
+              "id": 2,
+              "message": "Ki Sona Mammam"
+           },
+           {
+              "id": 3,
+              "message": "Guli Guli Guli"
+           }
+        ]
+     },
+     {
+      "identity":2,
+      "name": "Anjali Electromagnetic Ray",
+      "texts": [
+         {
+            "id": 1,
+            "message": "Sogoto is a piece of shit"
+         },
+         {
+            "id": 2,
+            "message": "Sogoto is a dick head!"
+         },
+         {
+            "id": 3,
+            "message": "Sogoto braggs alot!"
+         },
+         {
+           "id": 4,
+           "message": "Sougata Sucks"
+        },
+        {
+           "id": 5,
+           "message": "Sogoto is annoying asf!"
+        },
+        {
+           "id": 6,
+           "message": "Sogoto is also a Nibba!"
+        }
+      ]
+   },
+   {
+      "identity":0,
+      "name": "Om",
+      "texts": [
+         {
+            "id": 1,
+            "message": "Bhaiii"
+         },
+         {
+            "id": 2,
+            "message": "Kaisa hai"
+         },
+         {
+            "id": 3,
+            "message": "Masttt toh"
+         },
+         {
+           "id": 4,
+           "message": "Bhabhi kaisi hai"
+        },
+        {
+           "id": 5,
+           "message": "Mera namaste boliyp"
+        },
+        {
+           "id": 6,
+           "message": "Engineering mathematics se kharab kuch nhi hai"
+        }
+      ]
+   }
+   
+     
+    ]
+ }
+ 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/chatbar.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" action="/">
+        <button class="back">Back</button>
+    </form>
+    <h1>welcome to the messaging section of <%=info.name%></h1>
+    <hr>
+    <%info.texts.forEach((i)=>{%>
+        <h2>Chat <%=i.id%>:</h2>
+        <h3><%=i.message%></h3>
+        <span>
+            <!-- <form method="get" action="/<%= info.name %>/edit?q=<%= i.id %>">
+                <button class="Edit" type="submit">Edit</button>
+            </form>
+             -->
+            
+            <form method="post" action="/<%= info.name %>?_method=DELETE">
+                <input type="hidden" name="id" value="<%= i.id %>">
+                <button type="submit" class="Delete">Delete</button>
+            </form>            
+        </span>
+        <hr>
+    <%})%>
+    <form method="post" action="/<%=info.name%>">
+        <input type="text" id="new-message" name="message" placeholder="Enter Message Here"><br>
+        <button class="new">New Message</button>
+    </form>
+</body>
+</html>

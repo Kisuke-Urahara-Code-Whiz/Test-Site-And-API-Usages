@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+<body>
+    <h1>WhatsApp</h1>
+    <button class="create"><a href="http://localhost:3000/create">Create</a></button>
+    <% for (let i of users) { %>
+        <hr>
+        <div>
+            <span>
+                <%= i.name %>
+                <form method="GET" action="/<%= i.name %>">
+                    <button type="submit">Text</button>
+                </form>
+                <form method="POST" action="/?_method=DELETE">
+                    <input type="hidden" name="id" value="<%= i.identity %>">
+                    <button type="delete">Delete Chat</button>
+                </form>
+            </span>
+        </div>
+    <% } %>
+    
+</body>
+</html>
