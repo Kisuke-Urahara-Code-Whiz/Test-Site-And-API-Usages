@@ -94,17 +94,20 @@ app.delete("/",(req,res)=>{
     res.redirect("/");
 })
 
-// app.get("/:username/edit", (req, res) => {
-//     // Accessing the query parameter 'q'
-//     const id = req.query.q;
+app.get("/:username/:id",(req,res)=>{
+    console.log(req.params);
+    const a = Number(req.params.id);
+    console.log(a);
+    const user = req.params.username;
+    const users = data.users.find(i=>i.name===req.params.username);
+    res.render("msgedit.ejs",{name:user, msg:users.texts[a-1]});
+})
 
-//     // Ensure id is defined
-//     if (!id) {
-//         return res.status(400).send("ID is required.");
-//     }
-//     // let m = parseInt(req.body.id);
-//     // const user = data.users.find(i=>i.name===req.params.username);
-//     // let a = data.users[user.identity].texts[id-1];
-//     // console.log(a);
-//     res.render("msgedit.ejs");
-// });
+app.patch("/:username",(req,res)=>{
+    const user = data.users.find(i=>i.name===req.params.username);
+    const a = Number(req.body.id);
+    user.texts[a-1].message = req.body.msg;
+    data.users[user.identity] = user;
+    res.redirect(`/${req.params.username}`);
+})
+

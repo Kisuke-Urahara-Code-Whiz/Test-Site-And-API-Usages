@@ -16,10 +16,9 @@
         <h2>Chat <%=i.id%>:</h2>
         <h3><%=i.message%></h3>
         <span>
-            <!-- <form method="get" action="/<%= info.name %>/edit?q=<%= i.id %>">
-                <button class="Edit" type="submit">Edit</button>
-            </form>
-             -->
+           <form method="get" action="/<%=info.name%>/<%=i.id%>">
+            <button type="submit" class="Edit">Edit</button>
+            </form>  
             
             <form method="post" action="/<%= info.name %>?_method=DELETE">
                 <input type="hidden" name="id" value="<%= i.id %>">

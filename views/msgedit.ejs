@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Edit</title>
+    <title>Name Edit</title>
 </head>
 <body>
-    <h1>Edit message here</h1>
-    
+    <h1>Edit msg number <%=msg.id%> from the dm of <%=name%></h1>
+    <form method="post" action="/<%= name %>?_method=PATCH">
+        <label for="msg">Edit the message</label><hr><br>
+        <input type="hidden" name="id" value="<%= msg.id %>">
+        <textarea id="msg" name="msg" rows="4" cols="50"><%=msg.message%></textarea><br>
+        <button type="submit">Edit</button>
+    </form>
 </body>
 </html>
